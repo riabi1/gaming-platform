@@ -3,16 +3,15 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-tab',
   templateUrl: './tab.component.html',
-  styleUrl: './tab.component.css'
+  styleUrls: ['./tab.component.css']
 })
-export class TabComponent implements OnInit{
-
+export class TabComponent implements OnInit {
   @Input() tabTitle = ''
-  @Input() active = false
+  @Input() active =  false
 
-  constructor(){}
+  constructor() { }
 
   ngOnInit(): void {
-      
   }
+
 }
